@@ -158,26 +158,31 @@ pizzasIdImpar()
 /* b) ¿Hay alguna pizza que valga menos de $600? */
 
 
-const existenPizzasMas600 = pizzas.some((element) => element.id <= 600 )
+const existenPizzasMenos600 = pizzas.some((element) => element.id <= 600 )
 
-const pizzasQueValenMasDe600 = () => {
-if (existenPizzasMas600) {
-    console.log("EXISTEN PIZZAS DE MENOS DE 600");
-    pizzas.forEach(element => {
-        if(element.precio <= 600) {
-          return  console.log(`La Pizza ${element.nombre} cuesta menos de 600`)
+const pizzasQueValenMenosDe600 = () => {
+if (existenPizzasMenos600) {
+    console.log("EXISTEN PIZZAS DE MENOS DE $600");
+    
         } 
         
         
-    } )}}
+    } 
   
 
+pizzasQueValenMenosDe600();
 
 
+/* c) El nombre de cada pizza con su respectivo precio. */
 
 
+const listaPizzas = pizzas.forEach(element => {
+    
+    return console.log(`La Pizza ${element.nombre} tiene un valor de $ ${element.precio}`)})
 
 
-
-pizzasQueValenMasDe600()
-
+/* d) Todos los ingredientes de cada pizza (En cada iteración imprimir 
+    los ingredientes de la pizza actual). Ayuda: van a tener que realizar
+     dos recorridos, ya que cada pizza del array de 
+     pizzas tiene un array de ingredientes.
+ */
