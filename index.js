@@ -186,3 +186,14 @@ const listaPizzas = pizzas.forEach(element => {
      dos recorridos, ya que cada pizza del array de 
      pizzas tiene un array de ingredientes.
  */
+
+const listaPizzasConIngredientes = () => {
+    pizzas.forEach((pizza) => {
+        console.log(`La Pizza ${pizza.nombre} tiene los siguientes ingredientes : ${pizza.ingredientes}`)
+    })
+
+}
+
+listaPizzasConIngredientes()
+
+
