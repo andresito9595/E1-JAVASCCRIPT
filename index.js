@@ -1,96 +1,3 @@
-/* 
-const array = [ "hombre", "mujer", 'adan', 'eva', 'gomez', 'andres','calamardo', 'almorzar']
-
-
-const palabrasConJ = () => {
-    
-    let newArrayConJ = [];
-
-array.forEach((palabra) => {
-    if (palabra.toLowerCase().includes('a'))
-    {
-        newArrayConJ.push(palabra)
-    }
-}
-
-)
-console.log(newArrayConJ);
-    
-}
-
-palabrasConJ() */
-
-/* 
-const arrayNumero = [0,2,3,5,7,9,12,10,15,16,47,34]
-
-const multiplicarMayoresA = (a, b, array) => {
-    let newArray = [];
-    array.forEach(number => {
-        if (number > a) { 
-           
-           return newArray.push(number * b)
-        } 
-        newArray.push(number)
-
-    })
-console.log(newArray);
-return newArray}
-
-
-
-
-
-
-multiplicarMayoresA(9,10,arrayNumero) */
-
-
-/* const arrayNumero = [0,2,3,5,7,9,12,10,15,16,47,34,80,90]
-
-const existeNumero = (array, limite) => 
- array.some((numero) => numero > limite)
-    ? array.find((numero) => numero > limite)
-     : "NO HAY NUMERO MAYORES AL DADO"
-
- 
-
-
-
-
-
-
-console.log(existeNumero(arrayNumero, 100)) 
-
- */
-
-/* const masDe4Letras = (array) => {
-
-
-   let palabraMasDe4Letras = array.forEach(element => {
-   if(element.find((e) => e.lenght >= 4)){
-   return console.log(palabraMasDe4Letras)}
-   else {console.log('no hay palabras con mas de 4 letras');}
-    
-
-   });
-
-
-}
-
-
-const arrayPalabras = [ "gas","hombre", "mujer", 'adan', 'eva', 'gomez', 'andres','calamardo', 'almorzar',"moz"]
-
-
-masDe4Letras(arrayPalabras);
-
-
-
-
-
-
-
- */
-
-
 
 const pizzas = [
     {
@@ -162,7 +69,7 @@ const existenPizzasMenos600 = pizzas.some((element) => element.id <= 600 )
 
 const pizzasQueValenMenosDe600 = () => {
 if (existenPizzasMenos600) {
-    console.log("EXISTEN PIZZAS DE MENOS DE $600");
+    console.log("SI EXISTEN PIZZAS DE MENOS DE $600");
     
         } 
         
